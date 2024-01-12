@@ -53,21 +53,37 @@
 // console.log("4" == 4);
 // console.log("dodtkovo porivnue typ danyh", "4" === 4);
 
-let arr = [1, "test","testing", true, 's', null];
-arr.push("test1");
-arr.unshift("test2");
-console.log(arr);   
+// let arr = [1, "test","testing", true, 's', null];
+// arr.push("test1");
+// arr.unshift("test2");
+// console.log(arr);   
 
-arr.pop(); //del last el 
-console.log(arr); 
-arr.shift(); // delete first el
-console.log(arr); 
+// arr.pop(); //del last el 
+// console.log(arr); 
+// arr.shift(); // delete first el
+// console.log(arr); 
 
-arr = arr.filter(item => item !== "test");
-console.log(arr);
+// arr = arr.filter(item => item !== "test");
+// console.log(arr);
 
-const indexOfTest = arr.indexOf("testing");
-if (indexOfTest !== -1) {
-  arr.splice(indexOfTest, 1);
-}
-console.log(arr);
+// const indexOfTest = arr.indexOf("testing");
+// if (indexOfTest !== -1) {
+//   arr.splice(indexOfTest, 1);
+// }
+// console.log(arr);
+
+let a, b, c, d;
+
+//primite
+a = 1;
+b = a;
+a = a + 1;
+
+//complex
+c = [1];
+d = c;
+c[0] = c[0] + 1;
+
+//output
+console.log(a,b);
+console.log(c,d);
